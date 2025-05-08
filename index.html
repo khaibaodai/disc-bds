@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công cụ xác định tính cách DISC cho nhân viên kinh doanh BĐS - Vũ Trọng Khải</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9fafb;
+        }
+        .page-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header-gradient {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        }
+        .card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border-radius: 8px;
+        }
+        .card-header {
+            border-radius: 8px 8px 0 0;
+        }
+        .personality-card {
+            transition: transform 0.3s ease;
+        }
+        .personality-card:hover {
+            transform: translateY(-5px);
+        }
+        .btn {
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        .chart-container {
+            height: 300px;
+            position: relative;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f3f4f6;
+        }
+        .social-icon {
+            transition: transform 0.3s ease;
+        }
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+        .section {
+            padding: 2rem 0;
+            scroll-margin-top: 4rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="page-container bg-white shadow-lg my-0 min-h-screen">
+        <!-- Header -->
+        <header class="header-gradient text-white py-8 px-6 mb-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div>
+                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Công cụ xác định tính cách DISC</h1>
+                    <p class="text-lg md:text-xl opacity-90">Dành cho nhân viên kinh doanh bất động sản</p>
+                </div>
+                <div class="mt-4 md:mt-0 text-right">
+                    <p class="text-xl font-semibold">Vũ Trọng Khải</p>
+                    <p class="text-sm opacity-90">Chuyên gia Sale & Marketing Bất Động Sản</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="px-6 pb-8">
+            <!-- Introduction -->
+            <section id="intro" class="section">
+                <div class="card bg-white p-6 mb-8">
+                    <h2 class="text-2xl font-bold mb-4 text-blue-700">Giới thiệu về công cụ</h2>
+                    <p class="mb-4">Công cụ xác định tính cách khách hàng bất động sản theo mô hình DISC giúp nhân viên kinh doanh hiểu rõ tính cách khách hàng mà không cần khảo sát trực tiếp. Từ đó, bạn có thể điều chỉnh cách tiếp cận và chiến lược tư vấn phù hợp để tăng tỷ lệ chốt giao dịch.</p>
+                    
+                    <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">Mô hình DISC là gì?</h3>
+                        <p class="mb-2">DISC là mô hình phân loại tính cách dựa trên 4 nhóm đặc điểm chính:</p>
+                        <ul class="list-disc pl-5 mb-2 space-y-1">
+                            <li><strong>D (Dominance - Thống trị):</strong> Quyết đoán, tập trung kết quả, nói nhanh</li>
+                            <li><strong>I (Influence - Ảnh hưởng):</strong> Thân thiện, nhiệt tình, thích giao tiếp</li>
+                            <li><strong>S (Steadiness - Ổn định):</strong> Kiên nhẫn, nhẹ nhàng, thích an toàn</li>
+                            <li><strong>C (Conscientiousness - Cẩn trọng):</strong> Cẩn thận, chú ý chi tiết, logic</li>
+                        </ul>
+                        <p>Hiểu được nhóm tính cách của khách hàng sẽ giúp bạn điều chỉnh phương pháp giao tiếp và tư vấn phù hợp, từ đó tăng hiệu quả bán hàng.</p>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700">Lợi ích khi sử dụng công cụ:</h3>
+                    <ul class="list-disc pl-5 mb-4 space-y-1">
+                        <li>Xác định nhanh chóng tính cách khách hàng mà không cần khảo sát chính thức</li>
+                        <li>Cá nhân hóa cách tiếp cận phù hợp với từng loại khách hàng</li>
+                        <li>Tăng hiệu quả giao tiếp và khả năng chốt giao dịch</li>
+                        <li>Cung cấp kịch bản giao tiếp và chiến lược tư vấn cụ thể</li>
+                        <li>Giúp nhân viên mới nhanh chóng làm quen với kỹ năng phân tích tính cách</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- DISC Identification Tool -->
+            <section id="tool" class="section">
+                <div class="card bg-white p-6 mb-8">
+                    <h2 class="text-2xl font-bold mb-4 text-blue-700">Công cụ xác định tính cách DISC</h2>
+                    
+                    <!-- Tab Navigation -->
+                    <div class="border-b border-gray-200 mb-6">
+                        <ul class="flex flex-wrap -mb-px" id="methodTabs" role="tablist">
+                            <li class="mr-2" role="presentation">
+                                <button class="inline-block py-2 px-4 text-blue-600 hover:text-blue-800 font-medium text-center border-b-2 border-blue-600 rounded-t-lg active" id="observation-tab" data-method="observation" type="button" role="tab">
+                                    Phương pháp quan sát hành vi
+                                </button>
+                            </li>
+                            <li class="mr-2" role="presentation">
+                                <button class="inline-block py-2 px-4 text-gray-500 hover:text-gray-700 font-medium text-center border-b-2 border-transparent rounded-t-lg hover:border-gray-300" id="questions-tab" data-method="questions" type="button" role="tab">
+                                    Phương pháp câu hỏi tự nhiên
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Observation Method Tab -->
+                    <div id="observation-method" class="tab-content">
+                        <p class="mb-4">Quan sát và đánh giá hành vi của khách hàng dựa trên hai yếu tố chính:</p>
+                        
+                        <!-- Pace Selection -->
+                        <div class="mb-6">
+                            <h3 class="text-lg font-semibold mb-3">1. Tốc độ hành vi của khách hàng:</h3>
+                            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                                <div class="flex-1">
+                                    <div class="border border-gray-300 rounded-lg p-4 h-full hover:bg-blue-50 hover:border-blue-500 cursor-pointer" id="pace-fast">
+                                        <h4 class="text-lg font-medium mb-2 text-blue-700">Nhanh (Fast-paced)</h4>
+                                        <p>Nói nhanh, quyết đoán, năng động, đi thẳng vào vấn đề, thường ngắn gọn, dễ mất kiên nhẫn</p>
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="border border-gray-300 rounded-lg p-4 h-full hover:bg-blue-50 hover:border-blue-500 cursor-pointer" id="pace-slow">
+                                        <h4 class="text-lg font-medium mb-2 text-blue-700">Chậm (Cautious)</h4>
+                                        <p>Nói chậm, thận trọng, cẩn thận, suy nghĩ trước khi nói, thường ít nói, kiên nhẫn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Attitude Selection -->
+                        <div class="mb-6">
+                            <h3 class="text-lg font-semibold mb-3">2. Thái độ giao tiếp của khách hàng:</h3>
+                            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                                <div class="flex-1">
+                                    <div class="border border-gray-300 rounded-lg p-4 h-full hover:bg-blue-50 hover:border-blue-500 cursor-pointer" id="attitude-questioning">
+                                        <h4 class="text-lg font-medium mb-2 text-blue-700">Nghi ngờ (Questioning)</h4>
+                                        <p>Đặt nhiều câu hỏi, thích phân tích, thường nghi ngờ, ít biểu lộ cảm xúc, thích dữ liệu và bằng chứng</p>
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="border border-gray-300 rounded-lg p-4 h-full hover:bg-blue-50 hover:border-blue-500 cursor-pointer" id="attitude-accepting">
+                                        <h4 class="text-lg font-medium mb-2 text-blue-700">Thân thiện (Accepting)</h4>
+                                        <p>Cởi mở, dễ đồng ý, thân thiện, biểu lộ cảm xúc, quan tâm đến con người và mối quan hệ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center mt-6">
+                            <button id="analyze-observation" class="btn bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded-lg shadow-md disabled:opacity-50 disabled:cursor-not-allowed">
+                                Xác định tính cách
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Questions Method Tab -->
+                    <div id="questions-method" class="tab-content hidden">
+                        <p class="mb-4">Sử dụng các câu hỏi dưới đây trong cuộc trò chuyện tự nhiên với khách hàng, sau đó đánh giá câu trả lời:</p>
+                        
+                        <div class="space-y-6">
+                            <!-- Question 1 -->
+                            <div class="border border-gray-200 rounded-lg p-4">
+                                <h4 class="text-lg font-medium mb-2 text-blue-700">Câu hỏi 1: Về cách ra quyết định</h4>
+                                <p class="mb-3 italic">"Anh/chị thường đưa ra quyết định nhanh chóng hay cần thời gian suy nghĩ?"</p>
+                                <div class="space-y-2">
+                                    <div class="flex items-center">
+                                        <input type="radio" name="q1" id="q1-fast" value="fast" class="mr-2">
+                                        <label for="q1-fast">Quyết định nhanh chóng, không do dự (D)</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" name="q1" id="q1-medium" value="medium" class="mr-2">
+                                        <label for="q1-medium">Quyết định theo cảm xúc hoặc ấn tượng (I)</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" name="q1" id="q1-slow" value="slow" class="mr-2">
+                                        <label for="q1-slow">Cần thời gian suy nghĩ kỹ lưỡng (S/C)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Question 2 -->
+                            <div class="border border-gray-200 rounded-lg p-4">
+                                <h4 class="text-lg font-medium mb-2 text-blue-700">Câu hỏi 2: Về sự giao tiếp xã hội</h4>
+                                <p class="mb-3 italic">"Anh/chị có thích tham gia các sự kiện xã hội hoặc gặp gỡ nhiều người không?"</p>
+                                <div class="space-y-2">
+                                    <div class="flex items-center">
+                                        <input type="radio" name="q2" id="q2-social" value="social" class="mr-2">
+                                        <label for="q2-social">Rất thích gặp gỡ, giao tiếp nhiều người (I)</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" name="q2" id="q2-selective" value="selective" class="mr-2">
+                                        <label for="q2-selective">Chỉ thích giao tiếp khi cần thiết, mục đích rõ ràng (D)</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" name="q2" id="q2-less" value="less" class="mr-2">
+                                        <label for="q2-less">Thích gặp gỡ trong nhóm nhỏ, quen thuộc (S)</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" name="q2" id="q2-avoid" value="avoid" class="mr-2">
+                                        <label for="q2-avoid">Thích làm việc độc lập, tránh đám đông (C)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Question 3 -->
+                            <div class="border border-gray-200 rounded-lg p-4">
+                                <h4 class="text-lg font-medium mb-2 text-blue-700">Câu hỏi 3: Về tính kiên nhẫn</h4>
+                                <p class="mb-3 italic">"Anh/chị có kiên nhẫn và thích làm việc theo quy trình không?"</p>
+                                <div class="space-y-2">
+                                    <div class="flex items-center">
+                                        <input type="radio" name="q3" id="q3-impatient" value="impatient" class="mr-2">
+                                        <label for="q3-impatient">Không thích chờ đợi, muốn kết quả nhanh (D)</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" name="q3" id="q3-flexible" value="flexible" class="mr-2">
+                                        <label for="q3-flexible">Linh hoạt, không thích quy trình cứng nhắc (I)</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" name="q3" id="q3-patient" value="patient" class="mr-2">
+                                        <label for="q3-patient">Rất kiên nhẫn, thích làm việc theo quy trình (S)</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" name="q3" id="q3-systematic" value="systematic" class="mr-2">
+                                        <label for="q3-systematic">Thích quy trình chi tiết, rõ ràng (C)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Question 4 -->
+                            <div class="border border-gray-200 rounded-lg p-4">
+                                <h4 class="text-lg font-medium mb-2 text-blue-700">Câu hỏi 4: Về sự cẩn trọng</h4>
+                                <p class="mb-3 italic">"Anh/chị có thường kiểm tra lại thông tin trước khi quyết định không?"</p>
+                                <div class="space-y-2">
+                                    <div class="flex items-center">
+                                        <input type="radio" name="q4" id="q4-minimal" value="minimal" class="mr-2">
+                                        <label for="q4-minimal">Xem qua nhanh, tin tưởng vào bản năng (D)</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" name="q4" id="q4-references" value="references" class="mr-2">
+                                        <label for="q4-references">Thích tham khảo ý kiến người khác (I)</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" name="q4" id="q4-carefully" value="carefully" class="mr-2">
+                                        <label for="q4-carefully">Đọc kỹ, cân nhắc cẩn thận (S)</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" name="q4" id="q4-detailed" value="detailed" class="mr-2">
+                                        <label for="q4-detailed">Phân tích chi tiết tất cả thông tin (C)</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center mt-6">
+                            <button id="analyze-questions" class="btn bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded-lg shadow-md disabled:opacity-50 disabled:cursor-not-allowed">
+                                Xác định tính cách
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section (Initially Hidden) -->
+            <section id="results" class="section hidden">
+                <div class="card bg-white p-6 mb-8">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-2xl font-bold text-blue-700">Kết quả phân tích tính cách</h2>
+                        <button id="back-to-tool" class="text-blue-600 hover:text-blue-800 flex items-center">
+                            <i class="fas fa-arrow-left mr-1"></i> Quay lại
+                        </button>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                        <p class="text-lg">Khách hàng của bạn thuộc nhóm tính cách: <span id="personality-type" class="font-bold text-xl text-blue-700"></span></p>
+                        <p id="personality-desc" class="mt-2"></p>
+                    </div>
+                    
+                    <div id="personality-details" class="space-y-6">
+                        <!-- Content will be dynamically inserted here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- DISC Detail Information Section -->
+            <section id="disc-info" class="section">
+                <div class="card bg-white p-6 mb-8">
+                    <h2 class="text-2xl font-bold mb-6 text-blue-700">Thông tin chi tiết về mô hình DISC</h2>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full">
+                            <thead>
+                                <tr class="bg-blue-100">
+                                    <th class="text-left py-3 px-4 font-semibold text-blue-700">Loại tính cách</th>
+                                    <th class="text-left py-3 px-4 font-semibold text-blue-700">Đặc điểm</th>
+                                    <th class="text-left py-3 px-4 font-semibold text-blue-700">Cách tiếp cận hiệu quả</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b">
+                                    <td class="py-3 px-4 font-semibold">D (Thống trị)</td>
+                                    <td class="py-3 px-4">
+                                        <ul class="list-disc pl-5">
+                                            <li>Quyết đoán, nói thẳng</li>
+                                            <li>Tập trung vào kết quả</li>
+                                            <li>Nói nhanh, đi thẳng vào vấn đề</li>
+                                            <li>Có tính cạnh tranh cao</li>
+                                        </ul>
+                                    </td>
+                                    <td class="py-3 px-4">
+                                        <ul class="list-disc pl-5">
+                                            <li>Đi thẳng vào vấn đề</li>
+                                            <li>Nói ngắn gọn, tập trung vào kết quả</li>
+                                            <li>Đưa ra các lựa chọn rõ ràng</li>
+                                            <li>Nhấn mạnh lợi ích và ROI</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="py-3 px-4 font-semibold">I (Ảnh hưởng)</td>
+                                    <td class="py-3 px-4">
+                                        <ul class="list-disc pl-5">
+                                            <li>Nhiệt tình, thoải mái</li>
+                                            <li>Thích trò chuyện, kể chuyện</li>
+                                            <li>Tập trung vào mối quan hệ</li>
+                                            <li>Dễ bị cuốn theo cảm xúc</li>
+                                        </ul>
+                                    </td>
+                                    <td class="py-3 px-4">
+                                        <ul class="list-disc pl-5">
+                                            <li>Xây dựng mối quan hệ trước khi bán hàng</li>
+                                            <li>Sử dụng ngôn ngữ sinh động, hình ảnh</li>
+                                            <li>Nhấn mạnh về trải nghiệm, phong cách sống</li>
+                                            <li>Cho họ cơ hội được trò chuyện</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="py-3 px-4 font-semibold">S (Ổn định)</td>
+                                    <td class="py-3 px-4">
+                                        <ul class="list-disc pl-5">
+                                            <li>Kiên nhẫn, điềm tĩnh</li>
+                                            <li>Thích sự ổn định, an toàn</li>
+                                            <li>Lắng nghe tốt, ít nói</li>
+                                            <li>Cần thời gian để quyết định</li>
+                                        </ul>
+                                    </td>
+                                    <td class="py-3 px-4">
+                                        <ul class="list-disc pl-5">
+                                            <li>Xây dựng niềm tin, không gây áp lực</li>
+                                            <li>Nhấn mạnh sự ổn định, an toàn</li>
+                                            <li>Giải thích từng bước trong quy trình</li>
+                                            <li>Cho thời gian suy nghĩ, theo dõi thường xuyên</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 font-semibold">C (Cẩn trọng)</td>
+                                    <td class="py-3 px-4">
+                                        <ul class="list-disc pl-5">
+                                            <li>Cẩn thận, phân tích</li>
+                                            <li>Chú trọng vào chi tiết, dữ liệu</li>
+                                            <li>Thích sự chính xác, hoàn hảo</li>
+                                            <li>Đặt nhiều câu hỏi trước khi quyết định</li>
+                                        </ul>
+                                    </td>
+                                    <td class="py-3 px-4">
+                                        <ul class="list-disc pl-5">
+                                            <li>Cung cấp dữ liệu, số liệu chi tiết</li>
+                                            <li>Đưa ra thông tin chính xác, có căn cứ</li>
+                                            <li>Trả lời tất cả các câu hỏi của họ</li>
+                                            <li>Gửi tài liệu để họ nghiên cứu</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Case Studies Section -->
+            <section id="case-studies" class="section">
+                <div class="card bg-white p-6 mb-8">
+                    <h2 class="text-2xl font-bold mb-4 text-blue-700">Tình huống thực tế</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-2 text-blue-700">Tình huống 1: Khách hàng thuộc nhóm D (Thống trị)</h3>
+                            <p class="mb-2"><strong>Bối cảnh:</strong> Anh Minh là một doanh nhân thành đạt, luôn bận rộn với lịch trình dày đặc. Anh đang tìm một bất động sản để đầu tư.</p>
+                            <p class="mb-2"><strong>Quan sát:</strong> Anh nói nhanh, đi thẳng vào vấn đề, liên tục nhìn đồng hồ, và thường ngắt lời để hỏi về lợi nhuận đầu tư.</p>
+                            <p class="mb-2"><strong>Cách tiếp cận hiệu quả:</strong> Nhân viên kinh doanh đã chuẩn bị một bản tóm tắt ngắn gọn về dự án, tập trung vào ROI và tiềm năng tăng giá. Cuộc gặp được rút ngắn xuống còn 20 phút thay vì 1 tiếng như thông thường.</p>
+                            <p><strong>Kết quả:</strong> Anh Minh đánh giá cao cách làm việc hiệu quả, và đề nghị được cung cấp thêm thông tin về 2 dự án có tiềm năng sinh lời cao nhất.</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-2 text-blue-700">Tình huống 2: Khách hàng thuộc nhóm C (Cẩn trọng)</h3>
+                            <p class="mb-2"><strong>Bối cảnh:</strong> Chị Hà là một kế toán trưởng, đang tìm kiếm căn hộ để ở lâu dài.</p>
+                            <p class="mb-2"><strong>Quan sát:</strong> Chị đặt nhiều câu hỏi chi tiết về chất lượng xây dựng, pháp lý, quản lý vận hành, và đã nghiên cứu kỹ về các dự án trước khi đến gặp.</p>
+                            <p class="mb-2"><strong>Cách tiếp cận hiệu quả:</strong> Nhân viên kinh doanh đã chuẩn bị đầy đủ tài liệu về pháp lý, chứng chỉ chất lượng công trình, kế hoạch quản lý dài hạn. Sau buổi gặp, nhân viên gửi email với các thông tin chi tiết bổ sung mà chị Hà yêu cầu.</p>
+                            <p><strong>Kết quả:</strong> Chị Hà không quyết định ngay, nhưng đánh giá cao sự chuyên nghiệp và thông tin chi tiết. Sau 2 tuần nghiên cứu thêm, chị đã quay lại và tiến hành giao dịch.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer with Contact Information -->
+        <footer class="bg-gray-800 text-white py-8 px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Thông tin liên hệ</h3>
+                        <div class="space-y-2">
+                            <p class="flex items-center">
+                                <i class="fas fa-user mr-3 w-5 text-blue-300"></i> Vũ Trọng Khải
+                            </p>
+                            <p class="flex items-center">
+                                <i class="fas fa-briefcase mr-3 w-5 text-blue-300"></i> Sale & Marketing Bất Động Sản
+                            </p>
+                            <p class="flex items-center">
+                                <i class="fas fa-phone mr-3 w-5 text-blue-300"></i> Hotline: 0902 79 8800
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Kết nối với tôi</h3>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="https://www.facebook.com/khai.rainmaker/" target="_blank" rel="noopener" class="social-icon">
+                                <i class="fab fa-facebook text-2xl text-blue-400 hover:text-blue-300"></i>
+                            </a>
+                            <a href="https://zalo.me/0902798800" target="_blank" rel="noopener" class="social-icon">
+                                <i class="fas fa-comment text-2xl text-green-400 hover:text-green-300"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@sannhadeptrungtamhcm" target="_blank" rel="noopener" class="social-icon">
+                                <i class="fab fa-youtube text-2xl text-red-500 hover:text-red-400"></i>
+                            </a>
+                            <a href="http://www.linkedin.com/in/vu-trong-khai-2264ba1a4" target="_blank" rel="noopener" class="social-icon">
+                                <i class="fab fa-linkedin text-2xl text-blue-500 hover:text-blue-400"></i>
+                            </a>
+                            <a href="https://www.instagram.com/vutrongkhai.com.mkt.bds/" target="_blank" rel="noopener" class="social-icon">
+                                <i class="fab fa-instagram text-2xl text-pink-500 hover:text-pink-400"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 pt-6 border-t border-gray-700 text-center text-sm">
+                    <p>&copy; 2023 Vũ Trọng Khải - Công cụ xác định tính cách DISC cho nhân viên kinh doanh BĐS</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tab switching logic
+            const methodTabs = document.querySelectorAll('#methodTabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            methodTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const method = tab.getAttribute('data-method');
+                    
+                    // Update active tab
+                    methodTabs.forEach(t => {
+                        t.classList.remove('text-blue-600', 'border-blue-600');
+                        t.classList.add('text-gray-500', 'border-transparent');
+                    });
+                    tab.classList.remove('text-gray-500', 'border-transparent');
+                    tab.classList.add('text-blue-600', 'border-blue-600');
+                    
+                    // Show relevant content
+                    tabContents.forEach(content => {
+                        content.classList.add('hidden');
+                    });
+                    document.getElementById(method + '-method').classList.remove('hidden');
+                });
+            });
+            
+            // Observation method selection
+            let selectedPace = null;
+            let selectedAttitude = null;
+            
+            const paceOptions = ['pace-fast', 'pace-slow'];
+            const attitudeOptions = ['attitude-questioning', 'attitude-accepting'];
+            
+            paceOptions.forEach(id => {
+                const element = document.getElementById(id);
+                element.addEventListener('click', () => {
+                    // Reset all pace options
+                    paceOptions.forEach(opt => {
+                        document.getElementById(opt).classList.remove('bg-blue-50', 'border-blue-500');
+                        document.getElementById(opt).classList.add('border-gray-300');
+                    });
+                    
+                    // Select this option
+                    element.classList.remove('border-gray-300');
+                    element.classList.add('bg-blue-50', 'border-blue-500');
+                    selectedPace = id.replace('pace-', '');
+                    updateObservationAnalyzeButton();
+                });
+            });
+            
+            attitudeOptions.forEach(id => {
+                const element = document.getElementById(id);
+                element.addEventListener('click', () => {
+                    // Reset all attitude options
+                    attitudeOptions.forEach(opt => {
+                        document.getElementById(opt).classList.remove('bg-blue-50', 'border-blue-500');
+                        document.getElementById(opt).classList.add('border-gray-300');
+                    });
+                    
+                    // Select this option
+                    element.classList.remove('border-gray-300');
+                    element.classList.add('bg-blue-50', 'border-blue-500');
+                    selectedAttitude = id.replace('attitude-', '');
+                    updateObservationAnalyzeButton();
+                });
+            });
+            
+            function updateObservationAnalyzeButton() {
+                const button = document.getElementById('analyze-observation');
+                if (selectedPace && selectedAttitude) {
+                    button.disabled = false;
+                } else {
+                    button.disabled = true;
+                }
+            }
+            
+            // Analyze observation method
+            document.getElementById('analyze-observation').addEventListener('click', () => {
+                let personalityType = '';
+                
+                if (selectedPace === 'fast' && selectedAttitude === 'questioning') {
+                    personalityType = 'D';
+                } else if (selectedPace === 'fast' && selectedAttitude === 'accepting') {
+                    personalityType = 'I';
+                } else if (selectedPace === 'slow' && selectedAttitude === 'accepting') {
+                    personalityType = 'S';
+                } else if (selectedPace === 'slow' && selectedAttitude === 'questioning') {
+                    personalityType = 'C';
+                }
+                
+                showResults(personalityType);
+            });
+            
+            // Questions method
+            document.getElementById('analyze-questions').addEventListener('click', () => {
+                // Calculate scores for each personality type
+                let scores = {
+                    D: 0,
+                    I: 0,
+                    S: 0,
+                    C: 0
+                };
+                
+                // Question 1
+                const q1 = document.querySelector('input[name="q1"]:checked');
+                if (q1) {
+                    if (q1.value === 'fast') scores.D += 2;
+                    else if (q1.value === 'medium') scores.I += 2;
+                    else if (q1.value === 'slow') {
+                        scores.S += 1;
+                        scores.C += 1;
+                    }
+                }
+                
+                // Question 2
+                const q2 = document.querySelector('input[name="q2"]:checked');
+                if (q2) {
+                    if (q2.value === 'social') scores.I += 2;
+                    else if (q2.value === 'selective') scores.D += 1;
+                    else if (q2.value === 'less') scores.S += 2;
+                    else if (q2.value === 'avoid') scores.C += 2;
+                }
+                
+                // Question 3
+                const q3 = document.querySelector('input[name="q3"]:checked');
+                if (q3) {
+                    if (q3.value === 'impatient') scores.D += 2;
+                    else if (q3.value === 'flexible') scores.I += 1;
+                    else if (q3.value === 'patient') scores.S += 2;
+                    else if (q3.value === 'systematic') scores.C += 2;
+                }
+                
+                // Question 4
+                const q4 = document.querySelector('input[name="q4"]:checked');
+                if (q4) {
+                    if (q4.value === 'minimal') scores.D += 2;
+                    else if (q4.value === 'references') scores.I += 2;
+                    else if (q4.value === 'carefully') scores.S += 1;
+                    else if (q4.value === 'detailed') scores.C += 2;
+                }
+                
+                // Find the highest score
+                let maxScore = 0;
+                let personalityType = '';
+                
+                for (const type in scores) {
+                    if (scores[type] > maxScore) {
+                        maxScore = scores[type];
+                        personalityType = type;
+                    }
+                }
+                
+                showResults(personalityType);
+            });
+            
+            // Show results function
+            function showResults(personalityType) {
+                // Hide tool section and show results
+                document.getElementById('tool').classList.add('hidden');
+                document.getElementById('results').classList.remove('hidden');
+                
+                // Set personality type
+                document.getElementById('personality-type').textContent = getPersonalityFullName(personalityType);
+                document.getElementById('personality-desc').textContent = getPersonalityDescription(personalityType);
+                
+                // Populate personality details
+                const detailsContainer = document.getElementById('personality-details');
+                detailsContainer.innerHTML = '';
+                
+                // Add characteristics
+                const characteristicsCard = document.createElement('div');
+                characteristicsCard.className = 'border border-gray-200 rounded-lg overflow-hidden';
+                
+                const characteristicsHeader = document.createElement('div');
+                characteristicsHeader.className = 'bg-blue-600 text-white p-4';
+                characteristicsHeader.innerHTML = `<h3 class="text-xl font-semibold">Đặc điểm nổi bật</h3>`;
+                
+                const characteristicsBody = document.createElement('div');
+                characteristicsBody.className = 'p-4';
+                characteristicsBody.innerHTML = `<ul class="list-disc pl-5 space-y-1">${getCharacteristics(personalityType).map(item => `<li>${item}</li>`).join('')}</ul>`;
+                
+                characteristicsCard.appendChild(characteristicsHeader);
+                characteristicsCard.appendChild(characteristicsBody);
+                detailsContainer.appendChild(characteristicsCard);
+                
+                // Add approach script
+                const approachCard = document.createElement('div');
+                approachCard.className = 'border border-gray-200 rounded-lg overflow-hidden';
+                
+                const approachHeader = document.createElement('div');
+                approachHeader.className = 'bg-blue-600 text-white p-4';
+                approachHeader.innerHTML = `<h3 class="text-xl font-semibold">Kịch bản tiếp cận</h3>`;
+                
+                const approachBody = document.createElement('div');
+                approachBody.className = 'p-4';
+                approachBody.innerHTML = getApproachScript(personalityType);
+                
+                approachCard.appendChild(approachHeader);
+                approachCard.appendChild(approachBody);
+                detailsContainer.appendChild(approachCard);
+                
+                // Add communication notes
+                const notesCard = document.createElement('div');
+                notesCard.className = 'border border-gray-200 rounded-lg overflow-hidden';
+                
+                const notesHeader = document.createElement('div');
+                notesHeader.className = 'bg-blue-600 text-white p-4';
+                notesHeader.innerHTML = `<h3 class="text-xl font-semibold">Lưu ý giao tiếp</h3>`;
+                
+                const notesBody = document.createElement('div');
+                notesBody.className = 'p-4';
+                notesBody.innerHTML = `<ul class="list-disc pl-5 space-y-1">${getCommunicationNotes(personalityType).map(item => `<li>${item}</li>`).join('')}</ul>`;
+                
+                notesCard.appendChild(notesHeader);
+                notesCard.appendChild(notesBody);
+                detailsContainer.appendChild(notesCard);
+                
+                // Add communication channels
+                const channelsCard = document.createElement('div');
+                channelsCard.className = 'border border-gray-200 rounded-lg overflow-hidden';
+                
+                const channelsHeader = document.createElement('div');
+                channelsHeader.className = 'bg-blue-600 text-white p-4';
+                channelsHeader.innerHTML = `<h3 class="text-xl font-semibold">Kênh giao tiếp phù hợp</h3>`;
+                
+                const channelsBody = document.createElement('div');
+                channelsBody.className = 'p-4';
+                channelsBody.innerHTML = `<ul class="list-disc pl-5 space-y-1">${getCommunicationChannels(personalityType).map(item => `<li>${item}</li>`).join('')}</ul>`;
+                
+                channelsCard.appendChild(channelsHeader);
+                channelsCard.appendChild(channelsBody);
+                detailsContainer.appendChild(channelsCard);
+                
+                // Add sample scripts
+                const scriptsCard = document.createElement('div');
+                scriptsCard.className = 'border border-gray-200 rounded-lg overflow-hidden';
+                
+                const scriptsHeader = document.createElement('div');
+                scriptsHeader.className = 'bg-blue-600 text-white p-4';
+                scriptsHeader.innerHTML = `<h3 class="text-xl font-semibold">Kịch bản giao tiếp mẫu</h3>`;
+                
+                const scriptsBody = document.createElement('div');
+                scriptsBody.className = 'p-4';
+                
+                const scripts = getSampleScripts(personalityType);
+                scriptsBody.innerHTML = `
+                    <div class="mb-3">
+                        <p class="font-semibold mb-1">Mở đầu:</p>
+                        <p class="italic">"${scripts.intro}"</p>
+                    </div>
+                    <div class="mb-3">
+                        <p class="font-semibold mb-1">Trình bày:</p>
+                        <p class="italic">"${scripts.presentation}"</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold mb-1">Chốt giao dịch:</p>
+                        <p class="italic">"${scripts.closing}"</p>
+                    </div>
+                `;
+                
+                scriptsCard.appendChild(scriptsHeader);
+                scriptsCard.appendChild(scriptsBody);
+                detailsContainer.appendChild(scriptsCard);
+                
+                // Add consulting strategy
+                const strategyCard = document.createElement('div');
+                strategyCard.className = 'border border-gray-200 rounded-lg overflow-hidden';
+                
+                const strategyHeader = document.createElement('div');
+                strategyHeader.className = 'bg-blue-600 text-white p-4';
+                strategyHeader.innerHTML = `<h3 class="text-xl font-semibold">Chiến lược tư vấn</h3>`;
+                
+                const strategyBody = document.createElement('div');
+                strategyBody.className = 'p-4';
+                strategyBody.innerHTML = `<ul class="list-disc pl-5 space-y-1">${getConsultingStrategy(personalityType).map(item => `<li>${item}</li>`).join('')}</ul>`;
+                
+                strategyCard.appendChild(strategyHeader);
+                strategyCard.appendChild(strategyBody);
+                detailsContainer.appendChild(strategyCard);
+            }
+            
+            // Back button
+            document.getElementById('back-to-tool').addEventListener('click', () => {
+                document.getElementById('results').classList.add('hidden');
+                document.getElementById('tool').classList.remove('hidden');
+            });
+            
+            // Helper functions for personality data
+            function getPersonalityFullName(type) {
+                const types = {
+                    'D': 'D (Thống trị - Dominance)',
+                    'I': 'I (Ảnh hưởng - Influence)',
+                    'S': 'S (Ổn định - Steadiness)',
+                    'C': 'C (Cẩn trọng - Conscientiousness)'
+                };
+                return types[type] || '';
+            }
+            
+            function getPersonalityDescription(type) {
+                const descriptions = {
+                    'D': 'Khách hàng thuộc nhóm Thống trị (D) là người quyết đoán, tự tin và tập trung vào kết quả. Họ thường thẳng thắn, đi thẳng vào vấn đề và muốn xử lý công việc nhanh chóng.',
+                    'I': 'Khách hàng thuộc nhóm Ảnh hưởng (I) là người nhiệt tình, thân thiện và hướng ngoại. Họ thích giao tiếp, kể chuyện và đề cao mối quan hệ trong giao dịch.',
+                    'S': 'Khách hàng thuộc nhóm Ổn định (S) là người kiên nhẫn, đáng tin cậy và thích sự ổn định. Họ thường nhẹ nhàng, lắng nghe và cần thời gian để quyết định.',
+                    'C': 'Khách hàng thuộc nhóm Cẩn trọng (C) là người chú trọng vào chi tiết, phân tích và logic. Họ muốn có đầy đủ thông tin trước khi đưa ra quyết định.'
+                };
+                return descriptions[type] || '';
+            }
+            
+            function getCharacteristics(type) {
+                const characteristics = {
+                    'D': [
+                        'Quyết đoán, tự tin và mạnh mẽ',
+                        'Tập trung vào kết quả và hiệu quả',
+                        'Nói nhanh, đi thẳng vào vấn đề',
+                        'Thích thử thách và cạnh tranh',
+                        'Có xu hướng mất kiên nhẫn với chi tiết'
+                    ],
+                    'I': [
+                        'Hướng ngoại, nhiệt tình và thân thiện',
+                        'Thích giao tiếp và kể chuyện',
+                        'Dễ thể hiện cảm xúc và sự hào hứng',
+                        'Thích trải nghiệm mới và phong cách sống',
+                        'Dễ bị ấn tượng bởi hình ảnh trực quan'
+                    ],
+                    'S': [
+                        'Kiên nhẫn, nhẹ nhàng và đáng tin cậy',
+                        'Thích sự ổn định và an toàn',
+                        'Lắng nghe tốt, ít nói hơn',
+                        'Trung thành và có tính bền bỉ',
+                        'Thận trọng với thay đổi và rủi ro'
+                    ],
+                    'C': [
+                        'Cẩn thận, phân tích và chính xác',
+                        'Chú trọng vào chi tiết và dữ liệu',
+                        'Thích logic, quy trình và hệ thống',
+                        'Đặt nhiều câu hỏi trước khi quyết định',
+                        'Muốn biết mọi chi tiết và dữ liệu liên quan'
+                    ]
+                };
+                return characteristics[type] || [];
+            }
+            
+            function getApproachScript(type) {
+                const scripts = {
+                    'D': 'Tiếp cận trực tiếp, ngắn gọn và tập trung vào kết quả. Với khách hàng D, bạn nên đi thẳng vào vấn đề, nhấn mạnh lợi ích cụ thể và ROI của dự án. Tránh dài dòng và tập trung vào những điểm chính quan trọng nhất.',
+                    'I': 'Xây dựng mối quan hệ trước, tạo không khí vui vẻ và thân thiện. Với khách hàng I, bạn nên nhiệt tình, sử dụng ngôn ngữ cơ thể tích cực, và chia sẻ những câu chuyện thú vị về dự án. Nhấn mạnh vào trải nghiệm sống và phong cách sống mà dự án mang lại.',
+                    'S': 'Tiếp cận nhẹ nhàng, tạo cảm giác đáng tin cậy và không gây áp lực. Với khách hàng S, bạn cần kiên nhẫn, lắng nghe nhiều hơn nói, và tạo sự thoải mái. Nhấn mạnh vào tính ổn định, an toàn và độ tin cậy của dự án.',
+                    'C': 'Chuẩn bị kỹ lưỡng và cung cấp thông tin chi tiết, chính xác. Với khách hàng C, bạn cần có dữ liệu đầy đủ, trả lời mọi câu hỏi một cách logic và đưa ra các tài liệu tham khảo. Nhấn mạnh vào chất lượng, độ tin cậy và các thông số kỹ thuật của dự án.'
+                };
+                return scripts[type] || '';
+            }
+            
+            function getCommunicationNotes(type) {
+                const notes = {
+                    'D': [
+                        'Ngắn gọn, tránh dài dòng và đi lòng vòng',
+                        'Tập trung vào kết quả và lợi ích cụ thể',
+                        'Cung cấp các lựa chọn và để họ quyết định',
+                        'Tôn trọng thời gian của họ, không kéo dài cuộc gặp',
+                        'Chuẩn bị sẵn sàng để trả lời câu hỏi nhanh chóng'
+                    ],
+                    'I': [
+                        'Dùng ngôn ngữ sinh động, hình ảnh trực quan',
+                        'Tạo không khí vui vẻ, đừng quá nghiêm túc',
+                        'Lắng nghe câu chuyện của họ, thể hiện sự quan tâm',
+                        'Nhấn mạnh những trải nghiệm thú vị liên quan đến dự án',
+                        'Cho họ cơ hội được chia sẻ ý kiến và cảm nhận'
+                    ],
+                    'S': [
+                        'Lắng nghe tích cực, không gây áp lực',
+                        'Trình bày từng bước một cách rõ ràng',
+                        'Đảm bảo sự ổn định và độ tin cậy',
+                        'Kiên nhẫn, cho họ thời gian suy nghĩ',
+                        'Cung cấp sự hỗ trợ và đồng hành lâu dài'
+                    ],
+                    'C': [
+                        'Trả lời chi tiết, logic và chính xác',
+                        'Cung cấp đầy đủ dữ liệu và bằng chứng',
+                        'Không phóng đại hoặc đưa ra thông tin không chắc chắn',
+                        'Chuẩn bị kỹ càng để trả lời mọi câu hỏi',
+                        'Tôn trọng nhu cầu phân tích và tìm hiểu của họ'
+                    ]
+                };
+                return notes[type] || [];
+            }
+            
+            function getCommunicationChannels(type) {
+                const channels = {
+                    'D': [
+                        'Cuộc gọi ngắn, tập trung vào nội dung chính',
+                        'Email ngắn gọn với điểm chính được nhấn mạnh',
+                        'Gặp trực tiếp nhưng không kéo dài',
+                        'Tin nhắn nhanh để cập nhật thông tin'
+                    ],
+                    'I': [
+                        'Gặp trực tiếp, tương tác cá nhân',
+                        'Mạng xã hội, nền tảng trực quan',
+                        'Video call để duy trì kết nối cá nhân',
+                        'Tin nhắn nhiệt tình với biểu tượng cảm xúc'
+                    ],
+                    'S': [
+                        'Gặp trực tiếp theo lịch hẹn cụ thể',
+                        'Email chi tiết, có cấu trúc rõ ràng',
+                        'Cuộc gọi điện thoại không quá dài',
+                        'Liên lạc đều đặn, theo lịch trình'
+                    ],
+                    'C': [
+                        'Email với tài liệu đính kèm đầy đủ',
+                        'Tài liệu chi tiết, báo cáo kỹ thuật',
+                        'Gặp trực tiếp để giải thích chi tiết phức tạp',
+                        'Hội thảo chuyên sâu về dự án'
+                    ]
+                };
+                return channels[type] || [];
+            }
+            
+            function getSampleScripts(type) {
+                const scripts = {
+                    'D': {
+                        intro: 'Tôi thấy anh/chị muốn đi thẳng vào vấn đề. Đây là dự án có tiềm năng sinh lời cao nhất hiện nay.',
+                        presentation: 'Dự án này hoàn thành trong 6 tháng với ROI dự kiến 15%. Anh/chị muốn xem số liệu chi tiết không?',
+                        closing: 'Nếu anh/chị đồng ý, chúng ta có thể ký hợp đồng ngay hôm nay để đảm bảo tiến độ.'
+                    },
+                    'I': {
+                        intro: 'Tôi nghĩ anh/chị sẽ thích dự án này, nó rất phù hợp với phong cách năng động của anh/chị!',
+                        presentation: 'Dự án này đang thu hút nhiều nhà đầu tư trẻ, có cả không gian cộng đồng rất sôi động.',
+                        closing: 'Anh/chị muốn tôi sắp xếp một buổi tham quan dự án để cảm nhận trực tiếp không?'
+                    },
+                    'S': {
+                        intro: 'Tôi sẽ gửi anh/chị thông tin chi tiết về dự án để xem xét thoải mái.',
+                        presentation: 'Dự án này có lịch sử vận hành ổn định, rất phù hợp với nhu cầu lâu dài.',
+                        closing: 'Anh/chị cứ cân nhắc, tôi sẽ liên hệ lại sau vài ngày để hỗ trợ thêm.'
+                    },
+                    'C': {
+                        intro: 'Đây là số liệu về dự án, anh/chị có muốn tôi giải thích thêm chi tiết nào không?',
+                        presentation: 'Dự án này có báo cáo tài chính minh bạch, tôi sẽ gửi thêm tài liệu tham khảo.',
+                        closing: 'Nếu anh/chị cần thêm thông tin, tôi có thể cung cấp số liệu hoặc lịch sử dự án.'
+                    }
+                };
+                return scripts[type] || { intro: '', presentation: '', closing: '' };
+            }
+            
+            function getConsultingStrategy(type) {
+                const strategies = {
+                    'D': [
+                        'Cung cấp các lựa chọn rõ ràng để họ tự quyết định',
+                        'Tập trung vào lợi nhuận, ROI và tiềm năng tăng giá',
+                        'Trình bày ngắn gọn về ưu điểm cạnh tranh của dự án',
+                        'Nhấn mạnh tính độc quyền hoặc cơ hội giới hạn',
+                        'Tránh đi vào chi tiết kỹ thuật không cần thiết'
+                    ],
+                    'I': [
+                        'Lôi cuốn họ vào quá trình, tạo cảm giác hợp tác',
+                        'Sử dụng hình ảnh trực quan, video về dự án',
+                        'Kể câu chuyện về dự án và những người đang sống/đầu tư ở đó',
+                        'Nhấn mạnh yếu tố phong cách sống, danh tiếng',
+                        'Tạo không khí vui vẻ, thoải mái trong buổi tư vấn'
+                    ],
+                    'S': [
+                        'Cho thời gian suy nghĩ, không gây áp lực',
+                        'Theo dõi thường xuyên, hỗ trợ liên tục',
+                        'Trình bày quy trình mua/đầu tư từng bước',
+                        'Nhấn mạnh yếu tố an toàn, ổn định lâu dài',
+                        'Cung cấp các ví dụ về khách hàng hài lòng với dự án'
+                    ],
+                    'C': [
+                        'Cung cấp tài liệu tham khảo đầy đủ, chính xác',
+                        'Cho phép họ phân tích kỹ lưỡng thông tin',
+                        'Trả lời mọi câu hỏi với dữ liệu cụ thể',
+                        'Cung cấp bản vẽ kỹ thuật, thông số chi tiết',
+                        'Đưa ra bằng chứng về chất lượng, pháp lý của dự án'
+                    ]
+                };
+                return strategies[type] || [];
+            }
+            
+            // Initialize the analyze button state
+            updateObservationAnalyzeButton();
+        });
+    </script>
+</body>
+</html>
